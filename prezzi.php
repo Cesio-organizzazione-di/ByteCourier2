@@ -74,17 +74,22 @@ echo '<?xml version="1.0" encoding="UTF-8"?>';
 			$prezzo = $tempo_cons->nextSibling;
 			$prezzoX = $prezzo->textContent;
 
-			if(!$stato && $prezzoX == ""){
+			if(!$stato){
 				$offerte.= "<span class=\"pacchetto\">
 								<h3 class=\"titolo\"> {$nomeX}</h3>
 								<p><strong>Descrizione</strong>: {$descrizioneX}</p>
 								<p><strong>Tempo di consegna</strong>: {$tempo_consX}</p>";
+							if($prezzoX == ""){
 				$offerte.= 		"<p><strong>Prezzo</strong>: Non ancora assegnato </p>";	
 				$offerte.= 		"<form action = \"assegna_prezzo.php\" method = \"post\">
 									<input class=\"mod\" type=\"submit\" name=\"assegna\" value=\"{$id_pacchettoX}\" title = \"Modifica prezzo\" />
 								 </form>";
-				$offerte.= "</span><hr />";
 				$trovato = 1;
+							}else{
+				$offerte.= 		"<p><strong>Prezzo</strong>:".$prezzoX."</p>";
+							}
+				$offerte.= "</span><hr />";
+				
 			}
 		}
 		if($trovato == 0)
