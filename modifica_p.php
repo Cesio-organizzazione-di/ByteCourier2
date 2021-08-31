@@ -4,6 +4,25 @@
 
 	session_start();
 	if (!isset($_SESSION['accessoPermesso'])) header('Location: login_team.php');
+	
+	function id() {
+		$xmlPacchetto = "";
+		$x = 1;
+		foreach( file("XML/tipologie.xml") as $nodo){
+			$xmlPacchetto.= trim($nodo);
+		}
+		$doc = new DOMDocument();
+		$doc->loadXML($xmlPacchetto);
+		$root = $doc->documentElement;
+		$pacchetti = $root->childNodes;
+		for($i=0; $i<$pacchetti->length; $i++){
+				$pacchetto = $pacchetti->item($i);
+				$id_pacchetto = $pacchetto->firstChild;
+				$id_pacchettoX = $id_pacchetto->textContent;
+				$x = ($id_pacchettoX) + 1;
+		}
+		return $x;	
+	}
 
 	echo '<?xml version="1.0" encoding="UTF-8"?>';
 ?>
@@ -43,6 +62,23 @@
 				<p class = "info"><strong>Descrizione:</strong></p><p class = "input"><textarea name = "descrizione"><?php echo "{$_POST['descrizioneX']}" ?></textarea></p>
 				<p class = "info"><strong>Tempo di consegna:</strong></p><p class = "input"> <input type = "text" name = "tempo_cons" <?php echo "value=\"{$_POST['tempo_consX']}\"" ?> /></p>
 				<input class = "applica" type = "submit" name = "applica" value = "<?php echo $_POST['aggiorna']?>" title = "Applica modifiche" />
+			</form>
+			<p><em><strong>Nota bene:</strong> l'eventuale modifica del prezzo &egrave; a carico del gestore</em></p>
+		</div>
+		<p class = "p"><a href = "tipologie.php">Torna alle tipologie di spedizione</a></p>
+		<?php 
+			}
+		?>
+		
+		<?php 
+			if(isset($_POST['duplica'])) {
+		?>
+		<div class = "form">
+			<form action = "<?php $_SERVER['PHP_SELF'] ?>" method = "post" >
+				<p class = "info"><strong>Nome:</strong></p><p class = "input"><input type = "text" name = "nome" <?php echo "value=\"{$_POST['nomeX']}\"" ?> /></p>
+				<p class = "info"><strong>Descrizione:</strong></p><p class = "input"><textarea name = "descrizione"><?php echo "{$_POST['descrizioneX']}" ?></textarea></p>
+				<p class = "info"><strong>Tempo di consegna:</strong></p><p class = "input"> <input type = "text" name = "tempo_cons" <?php echo "value=\"{$_POST['tempo_consX']}\"" ?> /></p>
+				<input class = "applica" type = "submit" name = "doppione" value = "<?php echo $_POST['duplica']?>" title = "Applica modifiche" />
 			</form>
 			<p><em><strong>Nota bene:</strong> l'eventuale modifica del prezzo &egrave; a carico del gestore</em></p>
 		</div>
@@ -158,5 +194,42 @@
 		}
 		else 
 			echo "<h2>Si &egrave; verificato un problema</h2>";
+	}
+	
+	//se si modifica una tipologia già prezzata
+	if(isset($_POST['doppione'])){
+		$xmlPacchetto = "";
+		foreach(file("XML/tipologie.xml") as $nodo){
+			$xmlPacchetto.= trim($nodo);
+		}
+		
+		$doc = new DOMDocument();
+		$doc->loadXML($xmlPacchetto);
+		$root = $doc->documentElement;
+		
+		$pacchetto = $doc->createElement("pacchetto");
+		$root->appendChild($pacchetto);
+		
+		$y = id();
+	
+		$id_pacchetto = $doc->createElement("id_pacchetto", "$y");
+		$pacchetto->appendChild($id_pacchetto);
+		
+		$nome = $doc->createElement("nome", "{$_POST['nome']}");
+		$pacchetto->appendChild($nome);
+		
+		$descrizione = $doc->createElement("descrizione", "{$_POST['descrizione']}"); 
+		$pacchetto->appendChild($descrizione);
+		
+		$tempo_cons = $doc->createElement("temp_cons", "{$_POST['tempo_cons']}"); 
+		$pacchetto->appendChild($tempo_cons); 
+		
+		$prezzo = $doc->createElement("prezzo", "");
+		$pacchetto->appendChild($prezzo); 
+		
+		$doc->save('XML/tipologie.xml');
+		
+		echo "<h2 class=\"titolo\">Modifica effettuata con successo </h2>";
+		echo "<p class = \"p\"><a href = \"tipologie.php\">Torna alle tipologie di spedizione</a></p>";
 	}
 ?>

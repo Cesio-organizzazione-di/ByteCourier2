@@ -106,6 +106,10 @@ echo '<?xml version="1.0" encoding="UTF-8"?>';
 					$offerte.= 		"<p> <strong>Prezzo:</strong> {$prezzo->textContent} &euro; </p>";
 				
 					$offerte.=		"<form action = \"modifica_p.php\" method = \"post\">
+										<input class = \"modifica\" type=\"submit\" name=\"duplica\" value=\"{$id_pacchettoX}\" title = \"Modifica pacchetto\" /> 
+										<input type=\"hidden\" name =\"nomeX\" value=\"{$nomeX}\" />
+										<input type=\"hidden\" name = \"descrizioneX\" value=\"{$descrizioneX}\" />
+										<input type=\"hidden\" name = \"tempo_consX\" value=\"{$tempo_consX}\" />
 										<input class = \"elimina\" type=\"submit\" name=\"elimina\" value=\"{$id_pacchettoX}\" title = \"Elimina pacchetto\"/>
 									</form>
 								</span><hr />";
