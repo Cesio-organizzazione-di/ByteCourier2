@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spedizioni xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="spedizioni.xsd">
+	<spedizione username="xrushofblood" tipologia="2" stato="In sospeso">
+	<id_spedizione>1</id_spedizione>
+	<byteCourier1/>
+	<byteCourier2/>
+	<destinatario>
+		<nome>Simone Orelli</nome>
+		<indirizzo>
+			<via>Foresta</via>
+			<n_civico>45</n_civico>
+			<citta>Sezze</citta>
+			<CAP>04110</CAP>
+		</indirizzo>
+		<telefono>3398767345</telefono>
+	</destinatario>
+	<n_colli>1</n_colli>
+	<tipo_collo>
+		<dimensione>
+			<altezza>50</altezza>
+			<larghezza>20</larghezza>
+			<lunghezza>60</lunghezza>
+		</dimensione>
+		<peso>10</peso>
+		<fragile>no</fragile>
+	</tipo_collo>
+	<onere>Mittente</onere>
+	<ritiro>
+		<via>Via Giovanniello</via>
+		<n_civico>45</n_civico>
+		<citta>Latina</citta>
+		<CAP>04100</CAP>
+	</ritiro>
+	<auto>no</auto>
+	</spedizione>
+	<spedizione username="xrushofblood" tipologia="4" stato="In sospeso">
+	<id_spedizione>2</id_spedizione>
+	<byteCourier1/>
+	<byteCourier2/>
+	<destinatario>
+		<nome>Simone Orelli</nome>
+		<indirizzo>
+			<via>Foresta</via>
+			<n_civico>4</n_civico>
+			<citta>Sezze</citta>
+			<CAP>04110</CAP>
+		</indirizzo>
+		<telefono>3398767345</telefono>
+	</destinatario>
+	<n_colli>1</n_colli>
+	<tipo_collo>
+		<dimensione>
+			<altezza>50</altezza>
+			<larghezza>20</larghezza>
+			<lunghezza>60</lunghezza>
+		</dimensione>
+		<peso>10</peso>
+		<fragile>no</fragile>
+	</tipo_collo>
+	<onere>Mittente</onere>
+	<ritiro/>
+	<auto>no</auto>
+	</spedizione>
+	<spedizione username="xrushofblood" tipologia="1" stato="In sospeso">
+	<id_spedizione>3</id_spedizione>
+	<byteCourier1/>
+	<byteCourier2/>
+	<destinatario>
+		<nome>Simone Orelli</nome>
+		<indirizzo>
+			<via>Foresta</via>
+			<n_civico>5</n_civico>
+			<citta>Sezze</citta>
+			<CAP>04110</CAP>
+		</indirizzo>
+		<telefono>3398767345</telefono>
+	</destinatario>
+	<n_colli>1</n_colli>
+	<tipo_collo>
+		<dimensione>
+			<altezza>50</altezza>
+			<larghezza>20</larghezza>
+			<lunghezza>60</lunghezza>
+		</dimensione>
+		<peso>10</peso>
+		<fragile>no</fragile>
+	</tipo_collo>
+	<onere>Mittente</onere>
+	<ritiro>
+		<via>Via Giovanniello</via>
+		<n_civico>45</n_civico>
+		<citta>Latina</citta>
+		<CAP>04100</CAP>
+	</ritiro>
+	<auto>no</auto>
+	</spedizione>
+	<spedizione username="orelli_srl" tipologia="3" stato="In sospeso">
+	<id_spedizione>4</id_spedizione>
+	<byteCourier1/>
+	<byteCourier2/>
+	<destinatario>
+		<nome>Laura Stella</nome>
+		<indirizzo>
+			<via>Montagna</via>
+			<n_civico>54</n_civico>
+			<citta>Sezze</citta>
+			<CAP>04110</CAP>
+		</indirizzo>
+		<telefono>3398736345</telefono>
+	</destinatario>
+	<n_colli>2</n_colli>
+	<tipo_collo>
+		<dimensione>
+			<altezza>50</altezza>
+			<larghezza>20</larghezza>
+			<lunghezza>60</lunghezza>
+		</dimensione>
+		<peso>10</peso>
+		<fragile>no</fragile>
+	</tipo_collo>
+	<onere>Destinatario</onere>
+	<ritiro/>
+	<auto>no</auto>
+	</spedizione>
+	<spedizione username="orelli_srl" tipologia="5" stato="In sospeso">
+	<id_spedizione>5</id_spedizione>
+	<byteCourier1/>
+	<byteCourier2/>
+	<destinatario>
+		<nome>Laura Campagna</nome>
+		<indirizzo>
+			<via>Stella</via>
+			<n_civico>54</n_civico>
+			<citta>Sermoneta</citta>
+			<CAP>04115</CAP>
+		</indirizzo>
+		<telefono>3398736335</telefono>
+	</destinatario>
+	<n_colli>3</n_colli>
+	<tipo_collo>
+		<dimensione>
+			<altezza>50</altezza>
+			<larghezza>20</larghezza>
+			<lunghezza>60</lunghezza>
+		</dimensione>
+		<peso>10</peso>
+		<fragile>si</fragile>
+	</tipo_collo>
+	<onere>Mittente</onere>
+	<ritiro>
+		<via>Via del Colosseo</via>
+		<n_civico>101</n_civico>
+		<citta>Roma</citta>
+		<CAP>00100</CAP>
+	</ritiro>
+	<auto>no</auto>
+	</spedizione>
+</spedizioni>

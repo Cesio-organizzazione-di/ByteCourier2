@@ -1,0 +1,194 @@
+.signup {
+	background-image: url('immagini/signup.jpg');
+	font-family: verdana;
+	background-attachment: fixed;
+}
+
+.logo_piccolo img {
+	height: 100px;
+	filter: invert(100%);
+	position: absolute;
+	margin-left:10px;
+	top:25px;
+}
+
+.titolo {
+	text-align: center;
+}
+
+.titolo h1 {
+	font-variant: small-caps;
+	font-weight: normal;
+	color: midnightblue;
+	margin-top: 10%;
+}
+
+.titolo h2 {
+	font-variant: small-caps;
+	font-weight: normal;
+	color: rgb(187,163,100);
+	margin-top: 5%;
+}
+
+.titolo em {
+	margin-top: 5%;
+	font-size: 120%;
+	color: brown;
+}
+
+.riga {
+	display: inline-flex;
+	height: 330px;
+	padding-top: 3%;
+	width: 100%;
+	text-align: center;
+}
+
+.riga a {
+	line-height: 650px;
+}
+
+.colonna1 {
+	height: 300px;
+	width: 500px;
+	margin-left: 13%;
+	margin-right: 3%;
+	background-image: url('immagini/cliente1.jpg');
+	transition: 0.5s ease;
+	background-size: cover;
+	border-radius: 10px;
+	filter: brightness(70%);
+	color: midnightblue;
+	font-variant: small-caps;
+	font-size: 150%;
+	text-decoration: none;
+}
+
+.colonna1:hover {
+	transition: 0.5 ease;
+	border-radius: 30px;
+	filter: brightness(100%);
+}
+
+.colonna2 {
+	height: 300px;
+	width: 500px;
+	margin-left: 4%;
+	margin-right: 3%;
+	background-image: url('immagini/azienda.jpg');
+	transition: 0.5s ease;
+	background-size: cover;
+	border-radius: 10px;
+	filter: brightness(70%);
+	color: midnightblue;
+	font-variant: small-caps;
+	font-size: 150%;
+	text-decoration: none;
+}
+
+.colonna2:hover {
+	transition: 0.5 ease;
+	border-radius: 30px;
+	filter: brightness(100%);
+}
+
+.p {
+	margin-top: 5%;
+	text-align: center;
+	font-size: 110%;
+}
+
+.p a{
+	color: midnightblue;
+	transition: 0.3s ease;
+}
+
+.p a:hover {
+	color: rgb(187,163,100);
+	transition: 0.3s ease;
+}
+
+.corpo {
+	margin-top: 5%;
+	margin-left: 22%;
+	margin-right: 22%;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+	padding: 1%;
+	border-radius:20px;
+	padding-left: 7%;
+	padding-right: 5%;
+}
+
+
+.corpo p {
+	color: brown;
+	text-align: center;
+}
+
+.table {
+	margin: auto;
+	text-align: center;
+}
+
+.table img{
+	height: 150px;
+}
+
+.table td {
+	line-height: 30px;
+}
+
+.table li {
+	display: inline;
+}
+
+.table input {
+	border-radius: 8px;
+	height: 20px;
+	
+}
+
+.table input:focus {
+	outline: none;
+}
+
+.info {
+	padding-left: 50px;
+	font-variant: small-caps;
+}
+
+.bottoni {
+	margin-top: 2%;
+	text-align: center;
+}
+
+.bottoni input{
+	width: 90px;
+	height: 30px;
+	background-color: white;
+	border-radius: 20px;
+	border-bottom: 1px;
+	border-left: 1px;
+	border-color: black;
+	margin-left: 15px;
+	cursor: pointer;
+}
+
+.bottoni input:hover{
+	background-color: gainsboro
+}
+
+.disabilitato {
+	background-image: url('immagini/index.jpg');
+	font-family: verdana;
+	background-attachment: fixed;
+}
+
+.disabilitato h1 {
+	margin-top: 15%;
+	font-variant: small-caps;
+}
+
+.bloccato{
+	margin-left: 40%;
+}

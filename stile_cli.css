@@ -1,0 +1,771 @@
+.cliente{
+	background-image: url('immagini/login.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	font-family: verdana;
+}
+
+.logo img{
+    height: 261px;
+    width: 700px;
+    margin-left: 28%;
+}
+
+.logo_piccolo img{
+	height: 100px;
+	filter: invert(100%);
+	position: absolute;
+	margin-top: 20px;
+	margin-left: 10px;
+}
+
+.titolo {
+	text-align: center;
+}
+
+.titolo h2 {
+	font-variant: small-caps;
+	font-weight: normal;
+	color: rgb(187,163,100);
+	margin-top: 5%;
+}
+
+.titolo h3 {
+	font-variant: small-caps;
+	font-size: 130%;
+}
+
+.text{
+	border-radius: 20px;
+	height: 25px;
+	width: 130px;
+	border-style: none;
+	padding-left: 10px;
+}
+
+.text:focus{
+	outline:none;
+}
+
+.table td {
+	height: 50px;
+}
+
+.bottoni {
+	margin-top: 2%;
+	text-align: center;
+}
+
+.bottoni input{
+	width: 90px;
+	height: 30px;
+	background-color: gainsboro;
+	border-radius: 20px;
+	border-bottom: 1px;
+	border-left: 1px;
+	border-color: black;
+	margin-left: 15px;
+	cursor: pointer;
+}
+
+.bottoni input:hover{
+	background-color: white;
+}
+
+.p {
+	margin-top: 2%;
+	text-align: center;
+}
+
+.p a{
+	color: midnightblue;
+}
+
+.p a:hover {
+	color: rgb(187,163,100);
+}
+
+.logout {
+	float:right;
+	display: inline-flex;
+}
+
+.logout img {
+	width: 30px;
+	height: 30px;
+	vertical-align: middle;
+}
+
+.logout a {
+	vertical-align: middle;
+	color: midnightblue;
+	text-decoration: none;
+	font-variant: small-caps;
+}
+
+.logout a:hover {
+	color: goldenrod;
+}
+
+.logo h2 {
+	text-align: center; 
+	font-weight: normal;
+}
+
+.menu {
+	width: 60%; 
+	background-color: rgb(187,163,100); 
+	border-radius: 30px;
+	height: 70px;
+	margin-left: 20%;
+	text-align:center;
+}
+
+.menu img {
+	width: 50px;
+	height: 50px;
+	float: left;
+	margin-left: 30px;
+	margin-top: 9px;
+	position:relative;
+	
+}
+
+.menu a {
+	text-decoration: none; 
+	font-variant: small-caps;
+	margin-right: 7%;
+	font-size: 110%;
+	line-height: 65px;
+	color: midnightblue;
+	transition: 0.5s ease;
+}
+
+.menu a:hover {
+	font-size: 130%;
+	color: white;
+	transition: 0.5s ease;
+}
+
+.menu p{
+	font-size: 130%;
+	color: white;
+	font-variant: small-caps;
+	display: inline-flex;
+	margin-right: 7%;
+}
+
+.titolo h1 {
+	margin-top: 3%;
+	font-variant: small-caps;
+	margin-bottom: 2%;
+}
+
+.riga {
+	display: inline-flex;
+	height: 330px;
+	padding-top: 3%;
+	width: 100%;
+	text-align: center;
+}
+
+.riga a {
+	line-height: 650px;
+}
+
+.colonna1 {
+	height: 350px;
+	width: 400px;
+	margin-left: 4%;
+	margin-right: 3%;
+	background-image: url('immagini/richiedi.png');
+	text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+	transition: 0.5s ease;
+	background-size: 550px 400px;
+	border-radius: 10px;
+	filter: brightness(70%);
+	color: white;
+	font-variant: small-caps;
+	font-size: 150%;
+	text-decoration: none;
+	
+}
+
+.colonna1:hover {
+	transition: 0.5 ease;
+	border-radius: 30px;
+	filter: brightness(100%);
+}
+
+.colonna2 {
+	height: 350px;
+	width: 400px;
+	margin-left: 4%;
+	margin-right: 3%;
+	background-image: url('immagini/gestisci1.jpg');
+	text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+	transition: 0.5s ease;
+	background-size: 550px 400px;
+	border-radius: 10px;
+	filter: brightness(70%);
+	color: white;
+	font-variant: small-caps;
+	font-size: 150%;
+	text-decoration: none;
+}
+
+.colonna2:hover {
+	transition: 0.5 ease;
+	border-radius: 30px;
+	filter: brightness(100%);
+}
+
+.colonna3 {
+	height: 350px;
+	width: 400px;
+	margin-left: 4%;
+	margin-right: 3%;
+	background-image: url('immagini/clienti.jpg');
+	text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+	transition: 0.5s ease;
+	background-size: 400px 400px;
+	border-radius: 10px;
+	filter: brightness(70%);
+	color: white;
+	font-variant: small-caps;
+	font-size: 150%;
+	text-decoration: none;
+}
+
+.colonna3:hover {
+	transition: 0.5 ease;
+	border-radius: 30px;
+	filter: brightness(100%);
+}
+
+.colonna {
+	height: 350px;
+	width: 400px;
+	margin-left: 4%;
+	margin-right: 3%;
+}
+
+.corpo {
+    margin-top: 5%;
+    margin-left: 22%;
+    margin-right: 22%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+    padding: 1%;
+	padding-left:7%;
+    border-radius:20px;
+	padding-right: 5%;
+}
+
+.corpo h3{
+	font-variant: small-caps;
+	margin-top: 50px;
+	color: navy;
+}
+
+.corpo_richiesta{
+	padding-left: 10%;
+}
+
+.pacchetto p{
+	margin-left: 10%;
+}
+
+.pacchetto{
+	display: block;
+	margin-bottom: 50px;
+}
+
+.info{
+	width: 300px;
+	height: 20px;
+}
+
+.input{	
+	margin-left: 300px;
+	margin-top: -20px;
+	height: 20px;
+}
+
+input:focus{
+	outline:none;
+}
+
+.input input{
+	border-radius: 8px;
+	padding-left: 7px;	
+}
+
+.corpo h1{
+	text-align: center;
+	font-variant: small-caps;
+}
+
+.riepilogo{
+	margin: auto;
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
+
+.riepilogo th{
+	color: navy;
+}
+
+.riepilogo tr{
+	height: 40px;
+}
+
+.riepilogo td{
+	line-height: 25px;
+	text-align: center;
+}
+
+.riepilogo tfoot{
+	font-variant: small-caps;
+	text-align: right;
+	font-size: 120%;
+	background-color: rgba(187,163,100, 0.6);
+}
+
+.ricevuto{
+	text-align: center;
+	margin-top: 10%;
+}
+
+.ricevuto h1{
+	font-variant: small-caps;
+}
+
+.ricevuto a{
+	color: midnightblue;
+	margin-right: 5%;
+	margin-left: 10%;
+	text-decoration: none;
+	font-size: 110%;
+	line-height: 100px;
+	transition: 0.3s ease;
+}
+
+.ricevuto a:hover{
+	color: rgb(187,163,100);
+	transition: 0.3s ease;
+}
+
+.ricerca{
+	margin-top: 7%;
+	text-align: center;
+	font-size: 150%;
+	font-variant: small-caps;
+}
+
+.search{
+	width: 20%;
+	height: 30px;
+	border: none;
+	border-radius: 8px;
+}
+
+.richiesta{
+	margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 1%;
+	padding-left:7%;
+	padding-right: 5%;
+    border-radius:20px;
+	padding-right: 5%;
+	text-align: center;
+	line-height: 30px;
+}
+
+.wrap{
+	display: block;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+.commenti{
+	margin-left: 25%;
+	margin-right: 25%;
+	text-align: center;
+	margin-bottom: 10%;
+}
+
+.commento{
+	background-color: rgba(230,230,250,1);
+	border-radius: 8px;
+	padding:1px 15px;
+	margin-bottom: 3%;
+}
+
+.prima{
+	text-align: left;
+	font-variant: small-caps;
+	font-size: 120%;
+	color: midnightblue;
+}
+
+.seconda{
+	font-variant: small-caps;
+	font-size: 120%;
+	color: rgb(187,163,100);
+	background-color: midnightblue;
+	border-radius: 8px;
+}
+
+.contenuto{
+	font-family: garamond;
+	font-size: 2em;
+	font-variant: small-caps;
+}
+
+.contenuto p{
+	font-size: 70%; 
+	font-variant: none;
+}
+
+.time{
+	text-align: right;
+	font-size: 70%;
+}
+
+.form{
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.form span{
+	margin-right: 5%;
+}
+
+.accetta{
+	cursor: pointer;
+	color: rgba(0,0,0,0);
+	border: none;
+	margin-right: 7%;
+	padding: 15px;
+	background: url("immagini/complete.png") no-repeat center;
+	background-size: 30px;
+	transition: 0.3s ease;
+	filter: grayscale(100%);
+}
+
+.accetta:hover{
+	filter: grayscale(0%);
+	transition: 0.3s ease;
+	background-size: 35px;
+}
+
+.rifiuta{
+	cursor: pointer;
+	color: rgba(0,0,0,0);
+	border: none;
+	margin-right: 7%;
+	padding: 2%;
+	background: url("immagini/cancel.png") no-repeat center;
+	background-size: 35px;
+	transition: 0.3s ease;
+	filter: grayscale(100%);
+}
+
+.rifiuta:hover{
+	filter: grayscale(0%);
+	transition: 0.3s ease;
+	background-size: 30px;
+}
+
+.valutazioni{
+	margin-left: 25%;
+	margin-right: 25%;
+	text-align: center;
+	margin-bottom: 20%;
+}
+
+.valutazioni h1{
+	font-variant: small-caps;
+	margin-top: 50px;
+}
+
+.valutazioni a{
+	color: midnightblue;
+	margin-right: 5%;
+	margin-left: 10%;
+	text-decoration: none;
+	font-size: 110%;
+	line-height: 100px;
+	transition: 0.3s ease;
+}
+
+.valutazioni a:hover{
+	color: rgb(187,163,100);
+	transition: 0.3s ease;
+}
+
+.valutazione{
+	background-color: rgba(175,238,238,1);
+	border-radius: 8px;
+	padding:1px 15px;
+	margin-bottom: 3%;
+}
+
+.first{
+	font-variant: small-caps;
+	font-size: 120%;
+	color: midnightblue;	
+}
+
+.username{
+	text-align: left;
+	font-variant: small-caps;
+	font-size: 120%;
+}
+
+.voto{
+	font-variant: small-caps;
+	font-size: 120%;
+	color: rgb(187,163,100);
+	background-color: midnightblue;
+	border-radius: 8px;
+}
+
+.tot{
+	text-align: right;
+	font-size: 110%;
+	color: brown;
+}
+
+.recensione{
+	background-color: rgba(230,255,255,0.5);
+	width: 30%;
+	margin-left: 35%;
+	margin-right: 20%;
+	text-align: center;
+	border-radius: 10px;
+	padding-top: 3px;
+	padding-bottom: 10px;
+	font-variant: small-caps;
+	margin-bottom: 20%;
+}
+
+.recensione h2{
+	color: brown;
+}
+
+.valuta{
+	cursor: pointer;
+	color: rgba(0,0,0,0);
+	border: none;
+	margin-right: 7%;
+	padding: 15px;
+	background: url("immagini/star.png") no-repeat center;
+	background-size: 35px;
+	transition: 0.3s ease;
+	filter: grayscale(100%);
+	margin-left: 10%;
+}
+
+.valuta:hover{
+	filter: grayscale(0%);
+	transition: 0.3s ease;
+	background-size: 40px;
+}
+
+.destra{
+	margin-left: 68%;
+	margin-top: 1%;
+	text-align: right;
+	width: 30%;
+	background-color: rgba(255,255,255,.9);
+	text-align: center;
+	border-radius: 30px;
+	padding: 5px;
+}
+
+.destra img{
+	width: 150px;
+}
+
+.destra input{
+	width: 70px;
+	height: 25px;
+	background-color: gainsboro;
+	border-radius: 20px;
+	border-bottom: 1px;
+	border-left: 1px;
+	border-color: black;
+	margin-left: 15px;
+	cursor: pointer;
+}
+
+.destra input:hover{
+	background-color: white;
+}
+
+.titolo1{
+	position: absolute;
+	margin-top: 12%;
+	margin-left: 10%;
+}
+
+.titolo1 h3{
+	color: dimgray;
+}
+
+.filtri{
+	padding-left: 10%;
+	margin-top: 2%;
+	width: auto;
+	margin-left: -8px;
+	margin-right: -7px;
+	height: 70px;
+}
+
+.filtro{
+	display: inline-block;
+	margin: 20px 10px;
+	width: 220px;
+	height: 30px;
+	border:none;
+	border-radius: 20px;
+	background-color:rgb(187,163,100);
+	color:midnightblue;
+	text-decoration:none;
+	font-family: verdana;
+	font-size: 110%;
+	cursor: pointer;
+	font-variant: small-caps;
+	transition: 0.3s ease;
+}
+
+.filtro:hover{
+	background-color: midnightblue;
+	color: rgb(187,163,100);
+	transition: 0.3s ease	
+}
+
+.tutte_le_spedizioni {
+	text-align: center;
+}
+
+.tutte_le_spedizioni h1 {
+	font-variant: small-caps;
+}
+
+.tutte_le_spedizioni em {
+	font-size: 120%;
+	margin-bottom: 5%;
+	
+}
+
+.tutte_le_spedizioni table {
+	width:90%;
+	margin-left: 5%;
+	background-color: rgb(255, 255, 255,0.7);
+	margin-top: 0;
+	border-radius: 3px 3px 30px 30px;
+	padding-top: 10px;
+}
+
+.tutte_le_spedizioni p {
+	text-align: left;
+	margin-left: 5%;
+}
+
+.sopra {
+	text-align: left;
+	width:90%;
+	margin-left:5%;
+	border-radius: 30px 30px 3px 3px;
+	margin-top: 50px;
+	padding-bottom: 10px;
+}
+
+.tutte_le_spedizioni td {
+	width: 37%;
+}
+
+.tutte_le_spedizioni th {
+	font-variant: small-caps;
+}
+
+.tutte_le_spedizioni tfoot {
+	font-size: 120%;
+	text-align: right;
+	height: 50px;
+}
+
+.bottone {
+	height: 30px;
+	width: 30px;
+	border-radius: 50px;
+	border-color: black;
+	color: black;
+	font-weight: bold;
+	filter:opacity(50%);
+	transition: 0.3s ease;
+	cursor: pointer;
+}
+
+.bottone:hover {
+	height: 35px;
+	width: 35px;
+	filter:opacity(100%);
+	transition: 0.3s ease;
+}
+
+.link {
+	text-decoration: none; 
+	margin-right: 5%;
+	margin-left: 10%;
+	font-size: 110%;
+	line-height: 100px;
+	color: midnightblue;
+	transition: 0.3s ease;
+}
+
+.link:hover {
+	color: rgb(187,163,100);
+	transition: 0.3s ease;
+}
+
+.back{
+	margin-left: 39.5%;
+}
+
+.back a{
+	margin-right: 5%;
+	text-decoration: none;
+	color: midnightblue;
+	transition: 0.3s ease;
+}
+
+.back a:hover{
+	color: rgb(187,163,100);
+	transition: 0.3s ease;
+}
+.below{
+	font-size: 80%;
+	position: absolute;
+	margin-top: 3%;
+	margin-left: 85%;
+	background-color: white;
+	border-radius: 10px;
+	padding: 5px;
+}
+
+.below a{
+	text-decoration: none;
+	color: midnightblue;
+	transition: 0.3s ease;
+	margin-right: 10px;
+}
+.below a:hover{
+	color: rgb(187,163,100);
+	transition: 0.3s ease;
+}
+

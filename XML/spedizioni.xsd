@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" >
+  <xs:element name="spedizioni">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="spedizione" maxOccurs = "unbounded" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name = "spedizione">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name = "id_spedizione" type = "xs:integer" />
+        <xs:element name = "byteCourier1" type = "xs:string" />
+        <xs:element name = "byteCourier2" type = "xs:string"/>
+        <xs:element name = "destinatario" type = "profilo" />
+        <xs:element name = "n_colli" type = "xs:integer" />
+        <xs:element name = "tipo_collo" type = "collo" minOccurs = "1" maxOccurs = "unbounded" />
+        <xs:element name = "onere" type = "xs:string" />
+        <xs:element name = "ritiro" type = "indirizzo" />
+		<xs:element name = "auto" type = "xs:string" />
+      </xs:sequence>
+      <xs:attribute name = "username" type = "xs:string" use = "required" />
+      <xs:attribute name = "tipologia" type = "xs:integer" use = "required" />
+      <xs:attribute name = "stato" type = "xs:string" default = "In sospeso">
+        <xs:simpleType> 
+          <xs:restriction base = "xs:string">
+            <xs:enumeration value = "In sospeso" />
+            <xs:enumeration value = "In carico" />
+            <xs:enumeration value = "Consegnato" />
+			<xs:enumeration value = "Rifiutato" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+   <xs:complexType name = "profilo">
+      <xs:sequence>
+        <xs:element ref = "nome"  />
+        <xs:element ref = "indirizzo" />
+        <xs:element ref = "telefono" />
+      </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name = "collo">
+      <xs:sequence>
+        <xs:element ref = "dimensione" />
+        <xs:element ref = "peso" />
+        <xs:element ref = "fragile" />
+      </xs:sequence>
+    </xs:complexType> 
+    <xs:complexType name = "indirizzo">
+      <xs:sequence>
+        <xs:element ref = "via" />
+        <xs:element ref = "n_civico" />
+        <xs:element ref = "citta" />
+        <xs:element ref = "CAP" />
+      </xs:sequence>
+    </xs:complexType>
+    <complexType name = "dimensione">
+      <xs:sequence>
+       <xs:element ref = "altezza" />
+       <xs:element ref = "larghezza" />
+       <xs:element ref = "lunghezza" />
+      </xs:sequence>
+    </complexType>
+	<xs:element ref = "nome" type = "xs:string" />
+    <xs:element ref = "telefono" type = "xs:integer" />
+    <xs:element name = "peso" type = "xs:integer" />
+    <xs:element name = "fragile" type = "xs:string" />
+    <xs:element name = "via" type = "xs:string" />
+    <xs:element name = "n_civico" type = "xs:integer" />
+    <xs:element name = "citta" type = "xs:string" />
+    <xs:element name = "CAP" type = "xs:string" />
+    <xs:element name = "altezza" type = "xs:integer" />
+    <xs:element name = "larghezza" type = "xs:integer"/>
+    <xs:element name = "lunghezza" type = "xs:integer" />
+</xs:schema>

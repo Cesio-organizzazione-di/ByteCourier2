@@ -1,0 +1,770 @@
+.admin {
+	background-image: url('immagini/admin_back3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	font-family: verdana;
+}
+
+.logo img{
+    height: 261px;
+    width: 700px;
+    margin-left: 28%;
+}
+
+.logo h2 {
+	text-align: center; 
+	font-weight: normal;
+}
+
+.logout {
+	float:right;
+	display: inline-flex;
+}
+
+.logout img {
+	width: 30px;
+	height: 30px;
+	vertical-align: middle;
+}
+
+.logout a {
+	vertical-align: middle;
+	color: midnightblue;
+	text-decoration: none;
+	font-variant: small-caps;
+}
+
+.logout a:hover {
+	color: goldenrod;
+}
+
+.menu {
+	width: 70%; 
+	background-color: rgb(187,163,100); 
+	border-radius: 30px;
+	height: 70px;
+	margin-left: 15%;
+	text-align:center;
+}
+
+.menu img {
+	width: 50px;
+	height: 50px;
+	float: left;
+	margin-left: 30px;
+	margin-top: 9px;
+	position:relative;
+}
+
+.menu a {
+	text-decoration: none; 
+	font-variant: small-caps;
+	margin-right: 7%;
+	line-height: 65px;
+	color: white;
+	transition: 0.5s ease;
+}
+
+.menu a:hover {
+	font-size: 110%;
+	color: midnightblue;
+	transition: 0.5s ease;
+}
+
+.menu p {
+	font-size: 115%;
+	color:midnightblue;
+	font-variant: small-caps;
+	display: inline-flex;
+	margin-right: 7%;
+}
+
+.titolo {
+	text-align: center;
+}
+
+.titolo h1 {
+	margin-top: 3%;
+	font-variant: small-caps;
+	margin-bottom: 2%;
+	color: midnightblue;
+}
+
+.riga {
+	display: inline-flex;
+	height: 330px;
+	padding-top: 3%;
+	width: 100%;
+	text-align: center;
+}
+
+.riga a {
+	line-height: 650px;
+}
+
+.colonna1 {
+	height: 350px;
+	width: 400px;
+	margin-left: 4%;
+	margin-right: 3%;
+	background-image: url('immagini/tipologie.jpg');
+	transition: 0.5s ease;
+	background-size: 550px 400px;
+	border-radius: 10px;
+	filter: brightness(70%);
+	color: white;
+	font-variant: small-caps;
+	font-size: 150%;
+	text-decoration: none;
+	text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+
+.colonna1:hover {
+	transition: 0.5 ease;
+	border-radius: 30px;
+	filter: brightness(100%);
+}
+
+.colonna2 {
+	height: 350px;
+	width: 400px;
+	margin-left: 4%;
+	margin-right: 3%;
+	background-image: url('immagini/users.jpg');
+	text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+	transition: 0.5s ease;
+	background-size: 650px 400px;
+	border-radius: 10px;
+	filter: brightness(70%);
+	color: white;
+	font-variant: small-caps;
+	font-size: 150%;
+	text-decoration: none;
+}
+
+.colonna2:hover {
+	transition: 0.5 ease;
+	border-radius: 30px;
+	filter: brightness(100%);
+}
+
+.colonna3 {
+	height: 350px;
+	width: 400px;
+	margin-left: 4%;
+	margin-right: 3%;
+	background-image: url('immagini/inserisci1.jpg');
+	transition: 0.5s ease;
+	background-size: cover;
+	border-radius: 10px;
+	filter: brightness(70%);
+	color: white;
+	font-variant: small-caps;
+	font-size: 150%;
+	text-decoration: none;
+	text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+
+.colonna3:hover {
+	transition: 0.5 ease;
+	border-radius: 30px;
+	filter: brightness(100%);
+}
+
+.colonna {
+	height: 350px;
+	width: 400px;
+	margin-left: 4%;
+	margin-right: 3%;
+}
+
+.logo_piccolo img {
+	display: inline-flex;
+	height: 100px;
+	filter: invert(100%);
+	position: absolute;
+	margin-top:20px;
+	margin-left:10px;
+}
+
+.link {
+	margin-top: 5%;
+	font-size: 110%;
+	background-color: rgba(255,255,255,0.6);
+	width: 18%;
+	border-radius: 10px;
+	margin-left: 20%;
+	height: 51px;
+}
+
+.link p {
+	font-variant:small-caps;
+	margin-top:5px;
+	margin-left: 4%;
+	color: midnightblue;
+}
+
+.link img {
+	height: 50px;
+	line-height: 30px;
+}
+
+.link a{
+	text-decoration: none;
+	color: midnightblue;
+	transition: 0.3s ease;
+	display: inline-flex;
+	filter: grayscale(100);
+}
+
+.link a:hover {
+	filter: grayscale(0);
+	transition: 0.3s ease;
+}
+
+.pacchetti {
+	width: 65%;
+	margin-left: 20%;
+	margin-bottom: 10%;
+	margin-top: 5%;
+	background-color: rgba(220, 220, 220,0.8);
+}
+
+.pacchetto h2 {
+	font-variant: small-caps;
+	color: midnightblue;
+	margin-left: 2%;
+}
+
+.pacchetto p {
+	margin-left: 10%;
+}
+
+.pacchetto strong {
+	color: brown;
+}
+
+.pacchetto input {
+	margin-left: 90%;
+	margin-bottom: 10px;
+}
+
+.elimina{
+	cursor: pointer;
+    filter: grayscale(100%);
+	color: rgba(0,0,0,0);
+    border: none;
+    margin-right: 7%;
+    top: -50px;
+    padding: 2%;
+    background: url("immagini/trash.png") no-repeat center;
+    background-size: 30px;
+    transition: 0.3s ease;
+}
+
+.elimina:hover {
+	filter:grayscale(0%);
+	transition: 0.3s ease;
+	background-size: 35px;
+}
+
+.modifica{
+	cursor: pointer;
+    filter: grayscale(100%);
+	color: rgba(0,0,0,0);
+    border: none;
+    margin-right: 7%;
+    top: -50px;
+    padding: 2%;
+    background: url("immagini/edit_file.png") no-repeat center;
+    background-size: 30px;
+    transition: 0.3s ease;
+}
+
+.modifica:hover {
+	filter:grayscale(0%);
+	transition: 0.3s ease;
+	background-size: 35px;
+}
+
+.form {
+	margin-top: 5%;
+	margin-left: 22%;
+	margin-right: 22%;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+	padding: 1%;
+	border-radius:20px;
+	padding-left: 7%;
+	padding-right: 5%;
+	line-height: 80px;
+}
+
+.form em {
+	font-size: 120%;
+}
+
+.form h2 {
+	font-variant: small-caps;
+	font-weight: normal;
+	color: midnightblue;
+}
+
+.input {
+	margin-left: 300px;
+	margin-top:-35px;
+}
+
+.input textarea {
+	width: 256px;
+	height: 79px;
+}
+
+input:focus {
+	outline: none;
+}
+
+textarea:focus {
+	outline: none;
+}
+
+.info {
+	width: 600px;
+	height: 20px;
+	font-variant: small-caps;
+}
+
+.bottoni {
+	margin-top: 2%;
+	text-align: center;
+}
+
+.bottoni input{
+	width: 90px;
+	height: 30px;
+	background-color: gainsboro;
+	border-radius: 20px;
+	border-bottom: 1px;
+	border-left: 1px;
+	border-color: black;
+	margin-left: 15px;
+	cursor: pointer;
+}
+
+.bottoni input:hover{
+	background-color: white;
+}
+
+.p {
+	margin-top: 5%;
+	text-align: center;
+	font-size: 110%;
+	margin-bottom: 10%;
+}
+
+.p a{
+	color: midnightblue;
+	transition: 0.3s ease;
+}
+
+.p a:hover {
+	color: rgb(187,163,100);
+	transition: 0.3s ease;
+}
+
+.applica{
+	cursor: pointer;
+    filter: grayscale(100%);
+	color: rgba(0,0,0,0);
+    border: none;
+    margin-right: 7%;
+    top: -50px;
+    padding: 20px;
+    background: url("immagini/applica.png") no-repeat center;
+    background-size: 45px;
+    transition: 0.3s ease;
+	margin-left: 90%;
+}
+
+.applica:hover {
+	filter:grayscale(0%);
+	transition: 0.3s ease;
+	background-size: 40px;
+}
+
+.utenti {
+	width: 70%;
+	margin-left: 15%;
+	background-color: rgba(192,192,192,0.5);
+	border-radius: 30px;
+	margin-bottom: 50%;
+	padding-bottom: 30px;
+}
+
+.utenti h1 {
+	text-align:center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-variant:small-caps;
+	font-weight: normal;
+	color: midnightblue;
+}
+
+
+.utente {
+	background-color: rgba(255,255,255,0.8);
+	width: 50%;
+	margin-left: 26%;
+	margin-bottom: 3%;
+	padding: 5px;
+	line-height: 30px;
+	border-radius: 15px;
+}
+
+.utente img {
+	width: 80px;
+}
+
+.courier {
+	width: 50%;
+	margin-left: 26%;
+	margin-bottom: 3%;
+	padding: 5px;
+	line-height: 30px;
+	border-radius: 15px;
+	
+}
+
+.courier img{
+	width: 65px;
+}
+
+.gestore {
+	background-color: rgba(100, 149, 237,0.8);
+	width: 50%;
+	margin-left: 26%;
+	margin-bottom: 3%;
+	padding: 5px;
+	line-height: 30px;
+	border-radius: 15px;
+	
+}
+
+.gestore img {
+	width: 65px;
+}
+
+.stato {
+	float: right;
+	color: white;
+}
+
+.stato strong {
+	font-variant: small-caps;
+	font-size: 110%;
+}
+
+.user {
+	display: inline;
+	position: absolute;
+	margin-left: 5px;
+}
+
+.user strong {
+	font-variant: small-caps;
+	font-size: 110%;
+}
+
+.campo {
+}
+
+.campo strong{
+	font-variant: small-caps;
+	font-size: 110%;
+}
+
+.tipo strong {
+	font-variant: small-caps;
+	font-size: 110%;
+}
+
+.analizza{
+	cursor: pointer;
+	color: rgba(0,0,0,0);
+	border: none;
+	padding: 2%;
+	width: 30px;
+	padding-bottom: 5px;
+	background: url("immagini/lente.png") no-repeat center;
+	background-size: 30px;
+	transition: 0.3s ease;
+	filter: grayscale(100%);
+	margin-left: 90%;
+	
+}
+
+.analizza:hover{
+	filter: grayscale(0%);
+	transition: 0.3s ease;
+	background-size: 35px;
+}
+
+.filtri{
+	padding-left: 10%;
+	margin-top: 2%;
+	width: auto;
+	margin-left: 7%;
+	margin-right: -7px;
+	height: 70px;
+}
+
+.filtro{
+	display: inline-block;
+	margin: 20px 10px;
+	width: 220px;
+	height: 30px;
+	border:none;
+	border-radius: 20px;
+	background-color:midnightblue;
+	color:rgb(187,163,100);
+	text-decoration:none;
+	font-family: verdana;
+	font-size: 110%;
+	cursor: pointer;
+	font-variant: small-caps;
+	transition: 0.3s ease;
+}
+
+.filtro:hover{
+	background-color: rgb(187,163,100);
+	color: midnightblue;
+	transition: 0.3s ease;
+}
+
+.tutte_le_spedizioni {
+	text-align: center;
+}
+
+.tutte_le_spedizioni h1 {
+	font-variant: small-caps;
+}
+
+.tutte_le_spedizioni em {
+	font-size: 120%;
+	margin-bottom: 5%;
+	
+}
+
+.tutte_le_spedizioni table {
+	width:90%;
+	margin-left: 5%;
+	background-color: rgb(255, 255, 255,0.7);
+	margin-top: 0;
+	border-radius: 3px 3px 30px 30px;
+	padding-top: 10px;
+}
+
+.tutte_le_spedizioni p {
+	text-align: left;
+	margin-left: 5%;
+}
+
+.sopra {
+	text-align: left;
+	width:90%;
+	margin-left:5%;
+	border-radius: 30px 30px 3px 3px;
+	margin-top: 50px;
+	padding-bottom: 10px;
+}
+
+.tutte_le_spedizioni td {
+	width: 37%;
+}
+
+.tutte_le_spedizioni th {
+	font-variant: small-caps;
+}
+
+.tutte_le_spedizioni tfoot {
+	font-size: 120%;
+	text-align: right;
+	height: 50px;
+}
+
+table p {
+	width: 50%;
+	text-align: center;
+	display: block;
+}
+
+.valutazione {
+	margin-left: 73%;
+	font-size: 70%;
+	position: absolute;
+	margin-top: -75px;
+	width: 20%;
+	
+}
+
+.valutazione h4 {
+	margin-left: 12%;
+	font-size: 120%;
+}
+
+.valutazione p {
+	line-height: 3px;
+	display: inline;
+}
+
+.corpo {
+    margin-top: 5%;
+    margin-left: 35%;
+    margin-right: 22%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+    padding: 1%;
+	padding-left:7%;
+    border-radius:20px;
+	padding-right: 5%;
+	width: 20%;
+}
+
+.corpo h3{
+	font-variant: small-caps;
+	margin-top: 50px;
+	color: navy;
+}
+
+.indirizzo {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.indirizzo u {
+	font-variant:small-caps;
+	font-size: 120%;
+}
+
+.disabilita {
+	cursor: pointer;
+	color: rgba(0,0,0,0);
+	border: none;
+	padding: 7%;
+	padding-bottom: 5px;
+	background: url("immagini/block.png") no-repeat center;
+	background-size: 30px;
+	transition: 0.3s ease;
+	filter: grayscale(100%);
+	margin-left: 90%;
+}
+
+.disabilita:hover{
+	filter: grayscale(0%);
+	transition: 0.3s ease;
+	background-size: 33px;
+}
+
+.back img{
+	width: 50px;
+	float: right;
+	margin-right:50px;
+	margin-bottom: 10px;
+}
+
+.abilita {
+	cursor: pointer;
+	color: rgba(0,0,0,0);
+	border: none;
+	padding: 7%;
+	padding-bottom: 5px;
+	background: url("immagini/unlock.png") no-repeat center;
+	background-size: 30px;
+	transition: 0.3s ease;
+	filter: grayscale(100%);
+	margin-left: 90%;
+}
+
+.abilita:hover{
+	filter: grayscale(0%);
+	transition: 0.3s ease;
+	background-size: 33px;
+}
+
+.indietro {
+	text-decoration: none; 
+	margin-right: 5%;
+	margin-left: 10%;
+	font-size: 110%;
+	line-height: 100px;
+	color: midnightblue;
+	transition: 0.3s ease;
+}
+
+.indietro:hover {
+	color: rgb(187,163,100);
+	transition: 0.3s ease;
+}
+
+.media {
+	margin-top: 5%;
+	font-size: 130%;
+	text-align: center;
+	background-color: white;
+	width:50%;
+	margin-left: 20%;
+	color: rgb(187,163,100);
+	border-radius: 10px;
+}
+
+.g {
+	height: 350px;
+	width: 400px;
+	margin-left: 17%;
+	margin-right: 3%;
+	background-image: url('immagini/gestore.jpg');
+	transition: 0.5s ease;
+	background-size: 550px 420px;
+	border-radius: 10px;
+	filter: brightness(70%);
+	color: white;
+	font-variant: small-caps;
+	font-size: 150%;
+	text-decoration: none;
+	text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+
+.g:hover {
+	transition: 0.5 ease;
+	border-radius: 30px;
+	filter: brightness(100%);
+}
+
+.b {
+	height: 350px;
+	width: 400px;
+	margin-left: 10%;
+	margin-right: 3%;
+	background-image: url('immagini/bc.jpg');
+	text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+	transition: 0.5s ease;
+	background-size: 650px 480px;
+	border-radius: 10px;
+	filter: brightness(70%);
+	color: white;
+	font-variant: small-caps;
+	font-size: 150%;
+	text-decoration: none;
+}
+
+.b:hover {
+	transition: 0.5 ease;
+	border-radius: 30px;
+	filter: brightness(100%);
+}
+
+.column{
+	margin-left: 20.5%;
+	font-size: 120%;
+	font-variant:small-caps;
+	color: midnightblue;
+}

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="commenti">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="commento" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name = "commento">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name = "stato_avanz" type = "xs:string" />
+        <xs:element name = "descrizione" type = "xs:string" />
+        <xs:element name = "timestamp" type = "xs:dateTime" />
+      </xs:sequence>
+      <xs:attribute name = "id_spedizione" type = "xs:integer" />
+      <xs:attribute name = "username" type = "xs:string" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

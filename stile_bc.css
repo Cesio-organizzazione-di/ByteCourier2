@@ -1,0 +1,336 @@
+.bc{
+	background-image: url('immagini/login_bc.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	font-family: verdana;
+}
+
+.logout {
+	float:right;
+	display: inline-flex;
+}
+
+.logout img {
+	width: 30px;
+	height: 30px;
+	vertical-align: middle;
+}
+
+.logout a {
+	vertical-align: middle;
+	color: midnightblue;
+	text-decoration: none;
+	font-variant: small-caps;
+}
+
+.logout a:hover {
+	color: goldenrod;
+}
+
+.logo img{
+    height: 261px;
+    width: 700px;
+    margin-left: 27%;
+}
+
+.logo h2 {
+	text-align: center; 
+	font-weight: normal;
+}
+
+.menu {
+	width: 60%; 
+	background-color: rgb(187,163,100); 
+	border-radius: 30px;
+	height: 70px;
+	margin-left: 20%;
+	text-align:center;
+}
+
+.menu img {
+	width: 50px;
+	height: 50px;
+	float: left;
+	margin-left: 30px;
+	margin-top: 9px;
+	position:relative;
+	
+}
+
+.menu a {
+	text-decoration: none; 
+	font-variant: small-caps;
+	margin-right: 7%;
+	font-size: 90%;
+	line-height: 65px;
+	color: white;
+	transition: 0.5s ease;
+}
+
+.menu a:hover {
+	font-size: 110%;
+	color: midnightblue;
+	transition: 0.5s ease;
+}
+
+.menu p{
+	font-size: 130%;
+	color: white;
+	font-variant: small-caps;
+	display: inline-flex;
+	margin-right: 7%;
+}
+
+.titolo {
+	text-align: center;
+	color: midnightblue;
+	margin-top: 50px;
+}
+
+.logo_piccolo img{
+	height: 100px;
+	filter: invert(100%);
+	position: absolute;
+	margin-top: 20px;
+	margin-left: 10px;
+}
+
+.sped{
+	margin-top: 7%;	
+}
+
+.sopra {
+	text-align: left;
+	width:89%;
+	margin-left:5%;
+	border-radius: 30px 30px 3px 3px;
+	margin-top: 50px;
+	padding-bottom: 5px;
+	padding-left: 15px;	
+	padding-top: 1px;
+}
+
+.sped table {
+	width:90%;
+	margin-left: 5%;
+	background-color: rgb(255, 255, 255,0.7);
+	margin-top: 0;
+	border-radius: 3px 3px 30px 30px;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-bottom: 5px;
+}
+
+.sped td {
+	width: 37%;
+	padding-left: 10%;
+}
+
+.sped tr{
+	margin-bottom: 10px;
+}
+
+.bottone {
+	height: 30px;
+	width: 30px;
+	border-radius: 50px;
+	border-color: black;
+	color: black;
+	font-weight: bold;
+	filter:opacity(50%);
+	transition: 0.3s ease;
+	cursor: pointer;
+}
+
+.bottone:hover {
+	height: 35px;
+	width: 35px;
+	filter:opacity(100%);
+	transition: 0.3s ease;
+}
+
+.richiesta{
+	margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 1%;
+	padding-left:7%;
+	padding-right: 5%;
+	padding-right: 5%;
+	text-align: center;
+	line-height: 30px;
+}
+
+.spedizione{
+	border-radius:20px;
+}
+
+.importante{
+	font-size: 130%;
+}
+
+.wrap{
+	display: flex;  
+	flex-wrap: wrap;
+	width: 70%;
+	margin-left: 15%;
+}
+
+.spedizione td{
+	width: 30%;
+}
+
+.valutazioni{
+	margin-left: 25%;
+	margin-right: 25%;
+	text-align: center;
+	margin-bottom: 20%;
+}
+
+.valutazioni h1{
+	font-variant: small-caps;
+	margin-top: 50px;
+}
+
+.valutazioni a{
+	color: midnightblue;
+	margin-right: 5%;
+	margin-left: 10%;
+	text-decoration: none;
+	font-size: 110%;
+	line-height: 100px;
+	transition: 0.3s ease;
+}
+
+.valutazioni a:hover{
+	color: rgb(187,163,100);
+	transition: 0.3s ease;
+}
+
+.valutazione{
+	background-color: rgba(175,238,238,1);
+	border-radius: 8px;
+	padding:1px 15px;
+	margin-bottom: 3%;
+}
+
+.first{
+	font-variant: small-caps;
+	font-size: 120%;
+	color: midnightblue;	
+}
+
+.username{
+	text-align: left;
+	font-variant: small-caps;
+	font-size: 120%;
+}
+
+.voto{
+	font-variant: small-caps;
+	font-size: 120%;
+	color: rgb(187,163,100);
+	background-color: midnightblue;
+	border-radius: 8px;
+}
+
+.tot{
+	text-align: right;
+	font-size: 110%;
+	color: brown;
+}
+
+.interazione{
+	background-color: rgba(187, 163, 100, 0.6);
+	margin-bottom: 10%;
+	text-align: center;
+	width: 50%;
+	padding: 1px 30px 15px 30px;
+	margin-left: 20%;
+	border-radius: 30px;
+}
+
+.interazione h2{
+	font-weight: normal;
+	font-variant: small-caps;
+	color: midnightblue;
+}
+
+.interazione input{
+	border-radius: 8px;
+	padding-left: 5px;
+}
+
+.interazione input:focus{
+	outline:none;
+}
+
+.ok{
+	cursor: pointer;
+	color: rgba(0,0,0,0);
+	border: none;
+	background: url("immagini/ok.png") no-repeat center;
+	padding: 12px;
+	margin-left: 2px;
+	background-size: 20px;
+	transition: 0.3s ease;
+	filter: grayscale(100%);
+}
+
+.ok:hover{
+	filter: grayscale(0%);
+	transition: 0.3s ease;
+	background-size: 25px;
+}
+
+.commento{
+	background-color: rgba(230,230,250,1);
+	border-radius: 8px;
+	padding:1px 15px;
+	margin-bottom: 3%;
+	width: 60%;
+	margin-left: 18%;
+}
+
+.prima{
+	text-align: left;
+	font-variant: small-caps;
+	font-size: 120%;
+	color: midnightblue;
+}
+
+.seconda{
+	font-variant: small-caps;
+	font-size: 120%;
+	color: rgb(187,163,100);
+	background-color: midnightblue;
+	border-radius: 8px;
+}
+
+.contenuto{
+	font-family: garamond;
+	font-size: 2em;
+	font-variant: small-caps;
+}
+
+.contenuto p{
+	font-size: 70%; 
+	font-variant: none;
+}
+
+.time{
+	text-align: right;
+	font-size: 70%;
+}
+
+.corpo{
+	margin-top: 12%;
+	text-align: center;
+}
+
+.corpo h2{
+	font-weight: normal;
+	font-variant: small-caps;
+	color: midnightblue;
+}

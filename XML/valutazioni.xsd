@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="valutazioni">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="valutazione" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name = "valutazione">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name = "username" type = "xs:string" />
+        <xs:element name = "soddisfazione" type = "xs:integer" />
+        <xs:element name = "rapidita" type = "xs:integer" />
+      </xs:sequence>
+      <xs:attribute name = "id_spedizione" type = "xs:integer" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

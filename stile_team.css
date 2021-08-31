@@ -1,0 +1,209 @@
+.team{
+	background-image: url('immagini/login_team.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	font-family: verdana;
+}
+
+.logo img{
+    height: 261px;
+
+    margin-left: 28%;
+	filter: invert(100%);
+}
+
+.logo_piccolo img{
+	height: 100px;
+	filter: invert(100%);
+	position: absolute;
+	margin-top: 20px;
+	margin-left: 10px;
+}
+
+.titolo {
+	text-align: center;
+	font-size: 140%;
+}
+
+.titolo h2 {
+	font-variant: small-caps;
+	font-weight: normal;
+	margin-top: 5%;
+}
+
+.titolo h1 {
+	font-variant: small-caps;
+	font-weight: normal;
+	color: rgb(187,163,100);
+}
+
+.titolo p{
+	color: darkslategray;
+}
+
+.table td {
+	height: 50px;
+}
+
+.text{
+	border-radius: 20px;
+	height: 25px;
+	width: 130px;
+	border-style: none;
+	padding-left: 10px;
+}
+
+.text:focus{
+	outline:none;
+}
+
+.bottoni {
+	margin-top: 2%;
+	text-align: center;
+}
+
+.bottoni input{
+	width: 90px;
+	height: 30px;
+	background-color: white;
+	border-radius: 20px;
+	border-bottom: 1px;
+	border-left: 1px;
+	border-color: black;
+	margin-left: 15px;
+	cursor: pointer;
+}
+
+.bottoni input:hover{
+	background-color: gainsboro;
+}
+
+.below{
+	background-color: white;
+	border-radius: 10px;
+	padding: 5px;
+	font-size: 90%;
+	position: absolute;
+	margin-top: 4%;
+	margin-left: 85%;
+}
+
+.below a{
+	text-decoration: none;
+	color: midnightblue;
+	transition: 0.3s ease;
+	margin-right: 10px;
+}
+
+.below a:hover{
+	color: rgb(187,163,100);
+	transition: 0.3s ease;
+}
+
+.back{
+	margin-left: 38%;
+}
+
+.back a{
+	margin-right: 5%;
+	text-decoration: none;
+	color: midnightblue;
+	transition: 0.3s ease;
+}
+
+.back a:hover{
+	color: rgb(187,163,100);
+	transition: 0.3s ease;
+}
+
+.index {
+	background-image: url('immagini/diamante.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	font-family: verdana;
+}
+
+.logo1 img{
+    height: 261px;
+    width: 700px;
+    margin-left: 28%;
+}
+
+.sopra {
+	float:right;
+	display: inline-flex;
+	margin-left: 5%;
+	margin-right: 3%;
+}
+
+.sopra a {
+	vertical-align: middle;
+	color: midnightblue;
+	text-decoration: none;
+	font-variant: small-caps;
+	transition: 0.3s ease;
+}
+
+.sopra a:hover {
+	color: goldenrod;
+	transition: 0.3s ease;
+}
+
+.pacchetti {
+	margin-left: 10%;
+	width: 80%;
+}
+
+.pacchetto {
+	display: inline-block;
+	width: 45%;
+	background-color: rgba(255,255,255,0.5);
+	margin-left:30px;
+	margin-bottom: 5%;
+	padding-left: 20px;
+	border-radius: 20px;
+	
+}
+
+.pacchetto p {
+	height: 80px;
+	margin-left:5%;
+}
+
+.pacchetto h1 {
+	text-align:center;
+	font-variant: small-caps;
+	font-weight: normal;
+	color: midnightblue;
+}
+
+.descrizione {
+	margin-bottom:15%;
+	font-size: 110%;
+	line-height: 25px;
+	width: 90%;	
+}
+
+.pacchetto hr {
+	width: 70%;
+	margin-bottom: 5%;
+	color: rgb(187,163,100);
+	border-style: solid;
+}
+
+.link {
+	text-decoration: none; 
+	margin-right: 5%;
+	margin-left: 10%;
+	font-size: 110%;
+	line-height: 100px;
+	color: midnightblue;
+	transition: 0.3s ease;
+}
+
+.link:hover {
+	color: rgb(187,163,100);
+	transition: 0.3s ease;
+}

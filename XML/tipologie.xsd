@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="pacchetti">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="pacchetto" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name = "pacchetto">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name = "id_pacchetto" type = "xs:integer" />
+        <xs:element name = "nome" type = "xs:string" />
+        <xs:element name = "descrizione" type = "xs:string" />
+        <xs:element name = "tempo_cons" type = "xs: string" />
+        <xs:element name = "prezzo" type = "xs:decimal" />
+      </xs:sequence>
+      <xs:attribute name = "stato" type = "xs:string" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
