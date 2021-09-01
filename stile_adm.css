@@ -768,3 +768,22 @@ table p {
 	font-variant:small-caps;
 	color: midnightblue;
 }
+
+.ripristina{
+	cursor: pointer;
+    filter: grayscale(100%);
+	color: rgba(0,0,0,0);
+    border: none;
+    margin-right: 7%;
+    top: -50px;
+    padding: 2%;
+    background: url("immagini/restore.png") no-repeat center;
+    background-size: 30px;
+    transition: 0.3s ease;
+}
+
+.ripristina:hover {
+	filter:grayscale(0%);
+	transition: 0.3s ease;
+	background-size: 35px;
+}
