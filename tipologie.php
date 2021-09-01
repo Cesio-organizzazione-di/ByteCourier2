@@ -78,7 +78,6 @@ echo '<?xml version="1.0" encoding="UTF-8"?>';
 				$tempo_consX = $tempo_cons->textContent;
 				
 				$prezzo = $tempo_cons->nextSibling;
-				
 				if(!($prezzo->textContent)) {
 					$offerte.= "<span class = \"pacchetto\">
 									<h2> {$nomeX}</h2>
@@ -114,7 +113,8 @@ echo '<?xml version="1.0" encoding="UTF-8"?>';
 									</form>
 								</span><hr />";
 				}
-			}else{
+			}
+			else {
 				$occorrenza = 1;
 				$nome = $id_pacchetto->nextSibling;
 				$nomeX = $nome->textContent;
@@ -128,16 +128,16 @@ echo '<?xml version="1.0" encoding="UTF-8"?>';
 				$prezzo = $tempo_cons->nextSibling;
 				
 				$offerte.= "<span class = \"pacchetto\">
-								<h2> {$nomeX}</h2>
-								<p><strong>Descrizione:</strong> {$descrizioneX}</p>
-								<p><strong>Tempo di consegna:</strong> {$tempo_consX}</p>";
-		 
-				$offerte.= 		"<p> <strong>Prezzo:</strong> {$prezzo->textContent} &euro; </p>";
-			
-				$offerte.=		"<form action = \"modifica_p.php\" method = \"post\">
-									<input class = \"ripristina\" type=\"submit\" name=\"ripristina\" value=\"{$id_pacchettoX}\" title = \"Ripristina pacchetto\" /> 
-								</form>
-							</span><hr />";
+									<h2> {$nomeX}</h2>
+									<p><strong>Descrizione:</strong> {$descrizioneX}</p>
+									<p><strong>Tempo di consegna:</strong> {$tempo_consX}</p>";
+			 
+					$offerte.= 		"<p> <strong>Prezzo:</strong> {$prezzo->textContent} &euro; </p>";
+				
+					$offerte.=		"<form action = \"modifica_p.php\" method = \"post\">
+										<input class = \"ripristina\" type=\"submit\" name=\"ripristina\" value=\"{$id_pacchettoX}\" title = \"Ripristina pacchetto\" /> 
+									</form>
+								</span><hr />";
 				
 			}
 		}

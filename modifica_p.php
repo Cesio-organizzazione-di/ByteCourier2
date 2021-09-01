@@ -177,6 +177,7 @@
 			$id_pacchetto = $eliminando->firstChild;
 			$id_pacchettoX = $id_pacchetto->textContent;
 			
+			//vado a modificare i campi nell'xml che effettivamente sono stati inseriti nella form
 			if($id_pacchettoX == $_POST['elimina']) 
 				$occorrenza = 1;
 			$j+=1;
@@ -232,11 +233,10 @@
 		echo "<p class = \"p\"><a href = \"tipologie.php\">Torna alle tipologie di spedizione</a></p>";
 	}
 	
-	//se si ripristina un pacchetto eliminato
-	if(isset($_POST['ripristina'])){
+	if(isset($_POST['ripristina'])) {
 		$xmlRipristinando = "";
-		foreach(file("XML/tipologie.xml") as $nodo1){
-			$xmlRipristinando.= trim($nodo1);
+		foreach( file("XML/tipologie.xml") as $nodo1){
+			$xmlRipristinando .= trim($nodo1);
 		}
 		
 		$doc1 = new DOMDocument();
@@ -260,7 +260,7 @@
 		
 		if($occorrenza == 1) {
 			$ripristinando->setAttribute('stato', "");
-			
+		
 			$doc1->save('XML/tipologie.xml');
 			echo "<h2 style = \"text-align: center; margin-top: 10%;\">La tipologia di spedizione n° ".$id_pacchettoX." &egrave; stata ripristinata con successo!</h2>";
 			echo "<p class = \"p\"><a href = \"tipologie.php\">Torna alle tipologie di spedizione</a></p>";

@@ -1,9 +1,9 @@
 <?php
-	$db_name = "lweb9";
+	$db_name = "lweb18";
 	$user_table_name = "Utente";
 	
 	//TENTATIVO DI CONNESSIONE
-	$connection = new mysqli("localhost", "lweb9", "lweb9", $db_name);
+	$connection = new mysqli("localhost", "lweb18", "lweb18", $db_name);
 	
 	//CONTROLLO CONNESSIONE
 	if(mysqli_connect_errno()) {

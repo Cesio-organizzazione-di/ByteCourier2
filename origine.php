@@ -22,12 +22,12 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 			<h1> ByteCourier2 </h1>
 		
 			<?php 
-				$db_name = "lweb9";
+				$db_name = "lweb18";
 				$user_table_name = "Utente";
 							
 			//CREAZIONE TABELLE	
 				//APERTURA CONNESSIONE AL DB CREATO 
-				$connection = new mysqli("localhost", "lweb9", "lweb9" , $db_name);
+				$connection = new mysqli("localhost", "lweb18", "lweb18" , $db_name);
 				
 				//CONTROLLO CONNESSIONE
 				if(mysqli_connect_errno()) {
